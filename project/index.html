@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishimwe Mahoro Christianne - IT Student & Software Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3B82F6',
+                        secondary: '#10B981',
+                        accent: '#8B5CF6'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-gray-900">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 bg-transparent">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-2xl font-bold text-primary">
+                    Christianne
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home"
+                        class="nav-link text-gray-700 hover:text-primary transition-colors duration-300 font-medium">Home</a>
+                    <a href="#about"
+                        class="nav-link text-gray-700 hover:text-primary transition-colors duration-300 font-medium">About</a>
+                    <a href="#skills"
+                        class="nav-link text-gray-700 hover:text-primary transition-colors duration-300 font-medium">Skills</a>
+                    <a href="#projects"
+                        class="nav-link text-gray-700 hover:text-primary transition-colors duration-300 font-medium">Projects</a>
+                    <a href="#contact"
+                        class="nav-link text-gray-700 hover:text-primary transition-colors duration-300 font-medium">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 hover:text-primary transition-colors">
+                    <i class="bi bi-list text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="md:hidden transition-all duration-300 overflow-hidden max-h-0 opacity-0">
+                <div class="py-4 space-y-4">
+                    <a href="#home"
+                        class="block text-gray-700 hover:text-primary transition-colors duration-300 font-medium">Home</a>
+                    <a href="#about"
+                        class="block text-gray-700 hover:text-primary transition-colors duration-300 font-medium">About</a>
+                    <a href="#skills"
+                        class="block text-gray-700 hover:text-primary transition-colors duration-300 font-medium">Skills</a>
+                    <a href="#projects"
+                        class="block text-gray-700 hover:text-primary transition-colors duration-300 font-medium">Projects</a>
+                    <a href="#contact"
+                        class="block text-gray-700 hover:text-primary transition-colors duration-300 font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20 bg-gradient-to-br from-blue-50 to-indigo-100">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="flex-1 text-center lg:text-left">
+                    <div class="mb-6">
+                        <h1 class="text-4xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight fade-in">
+                            Hi, I'm <span class="text-primary">Ishimwe Christianne</span>
+                        </h1>
+                        <h2 class="text-xl lg:text-2xl text-gray-600 mb-6 font-medium fade-in-delay">
+                            IT Student & Software Developer
+                        </h2>
+                        <p class="text-lg text-gray-700 leading-relaxed mb-8 max-w-2xl fade-in-delay-2">
+                            Passionate about Information Management Systems and creating innovative software solutions.
+                            Currently pursuing my IT degree while building real-world applications that make a
+                            difference.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8 fade-in-delay-3">
+                        <button id="resume-btn"
+                            class="bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl">
+                            <i class="bi bi-download"></i>
+                            Download Resume
+                        </button>
+                        <a href="#contact"
+                            class="border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 text-center">
+                            Get In Touch
+                        </a>
+                    </div>
+
+                    <div class="flex justify-center lg:justify-start gap-6 fade-in-delay-4">
+                        <a href="https://github.com/IshimweMahoroChristianne" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-600 hover:text-primary transition-colors duration-300">
+                            <i class="bi bi-github text-3xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ishimwe-mahoro-christianne-a0a3b3316" target="_blank"
+                            rel="noopener noreferrer"
+                            class="text-gray-600 hover:text-primary transition-colors duration-300">
+                            <i class="bi bi-linkedin text-3xl"></i>
+                        </a>
+                        <a href="mailto:ishimwechtistianne4@gmail.com"
+                            class="text-gray-600 hover:text-primary transition-colors duration-300">
+                            <i class="bi bi-envelope text-3xl"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="flex-1 lg:flex-none">
+                    <div class="relative w-80 h-80 lg:w-96 lg:h-96 mx-auto">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-primary to-indigo-600 rounded-full opacity-20 animate-pulse">
+                        </div>
+                        <div
+                            class="absolute inset-8 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full flex items-center justify-center">
+                            <div class="text-white text-6xl font-bold">IC</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    I'm a dedicated IT student with a passion for creating innovative solutions
+                    that bridge technology and real-world challenges.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">My Journey</h3>
+                    <div class="space-y-4 text-gray-700 leading-relaxed">
+                        <p>
+                            As an IT student specializing in Information Management Systems, I'm passionate
+                            about leveraging technology to solve complex business problems and improve
+                            organizational efficiency.
+                        </p>
+                        <p>
+                            My academic journey has equipped me with a solid foundation in software
+                            development, database design, system analysis, and project management.
+                            I enjoy the challenge of turning abstract concepts into practical,
+                            user-friendly solutions.
+                        </p>
+                        <p>
+                            When I'm not coding, you'll find me exploring new technologies, contributing
+                            to open-source projects, or collaborating with fellow developers on innovative
+                            solutions that make a positive impact.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow duration-300">
+                        <i class="bi bi-code-slash text-3xl text-primary mb-4"></i>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">Software Development</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Building robust applications with modern
+                            technologies and best practices</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow duration-300">
+                        <i class="bi bi-database text-3xl text-secondary mb-4"></i>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">Information Systems</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Specializing in data management, system
+                            analysis, and process optimization</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow duration-300">
+                        <i class="bi bi-globe text-3xl text-accent mb-4"></i>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">Web Technologies</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Creating responsive, user-friendly web
+                            applications and interfaces</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow duration-300">
+                        <i class="bi bi-people text-3xl text-orange-600 mb-4"></i>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">Team Collaboration</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">Working effectively in teams using agile
+                            methodologies and version control</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Technical Skills</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    A comprehensive overview of my technical expertise and proficiency levels
+                    across various technologies and tools.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6 text-center">Programming Languages</h3>
+                    <div class="space-y-4">
+                        <div class="skill-item" data-skill="85">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">JavaScript</span>
+                                <span class="text-gray-500 text-sm">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-indigo-600 h-2 rounded-full"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="75">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">TypeScript</span>
+                                <span class="text-gray-500 text-sm">25%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-indigo-600 h-2 rounded-full"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">Python</span>
+                                <span class="text-gray-500 text-sm">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-indigo-600 h-2 rounded-full"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="70">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">Java</span>
+                                <span class="text-gray-500 text-sm">70%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-indigo-600 h-2 rounded-full"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">SQL</span>
+                                <span class="text-gray-500 text-sm">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-indigo-600 h-2 rounded-full"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6 text-center">Web Technologies</h3>
+                    <div class="space-y-4">
+                        <div class="skill-item" data-skill="80">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">React</span>
+                                <span class="text-gray-500 text-sm">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-indigo-600 h-2 rounded-full"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="90">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">HTML/CSS</span>
+                                <span class="text-gray-500 text-sm">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-indigo-600 h-2 rounded-full"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="75">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">Node.js</span>
+                                <span class="text-gray-500 text-sm">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-indigo-600 h-2 rounded-full"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="70">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">Express.js</span>
+                                <span class="text-gray-500 text-sm">70%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-indigo-600 h-2 rounded-full"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">Tailwind CSS</span>
+                                <span class="text-gray-500 text-sm">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-indigo-600 h-2 rounded-full"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6 text-center">Database & Systems</h3>
+                    <div class="space-y-4">
+                        <div class="skill-item" data-skill="85">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">MySQL</span>
+                                <span class="text-gray-500 text-sm">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-indigo-600 h-2 rounded-full"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">PostgreSQL</span>
+                                <span class="text-gray-500 text-sm">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-indigo-600 h-2 rounded-full"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="75">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">MongoDB</span>
+                                <span class="text-gray-500 text-sm">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-indigo-600 h-2 rounded-full"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">System Analysis</span>
+                                <span class="text-gray-500 text-sm">80%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-indigo-600 h-2 rounded-full"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="85">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">Data Modeling</span>
+                                <span class="text-gray-500 text-sm">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-indigo-600 h-2 rounded-full"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6 text-center">Tools & Technologies</h3>
+                    <div class="space-y-4">
+                        <div class="skill-item" data-skill="85">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">Git/GitHub</span>
+                                <span class="text-gray-500 text-sm">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-indigo-600 h-2 rounded-full"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="90">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">VS Code</span>
+                                <span class="text-gray-500 text-sm">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-indigo-600 h-2 rounded-full"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="70">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">Figma</span>
+                                <span class="text-gray-500 text-sm">70%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-indigo-600 h-2 rounded-full"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="75">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">Postman</span>
+                                <span class="text-gray-500 text-sm">75%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-indigo-600 h-2 rounded-full"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="70">
+                            <div class="flex justify-between items-center mb-2">
+                                <span class="text-gray-700 font-medium">Linux</span>
+                                <span class="text-gray-500 text-sm">70%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="skill-bar bg-gradient-to-r from-blue-500 to-indigo-600 h-2 rounded-full"
+                                    style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Featured Projects</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    Explore some of my recent work in information management systems and web development.
+                </p>
+            </div>
+
+            <!-- Featured Projects -->
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div
+                    class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <i class="bi bi-database text-3xl text-primary mr-3"></i>
+                            <h3 class="text-xl font-bold text-gray-900">Library Management System</h3>
+                        </div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">A comprehensive library management application
+                            built with React and Node.js, featuring book cataloging, member management, and automated
+                            checkout processes.</p>
+
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span
+                                class="px-3 py-1 bg-blue-100 text-primary text-sm rounded-full font-medium">React</span>
+                            <span
+                                class="px-3 py-1 bg-blue-100 text-primary text-sm rounded-full font-medium">Node.js</span>
+                            <span
+                                class="px-3 py-1 bg-blue-100 text-primary text-sm rounded-full font-medium">PostgreSQL</span>
+                            <span
+                                class="px-3 py-1 bg-blue-100 text-primary text-sm rounded-full font-medium">Express</span>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <a href="#"
+                                class="flex items-center gap-2 bg-primary hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-300 text-sm font-medium">
+                                <i class="bi bi-box-arrow-up-right"></i>
+                                Live Demo
+                            </a>
+                            <a href="#"
+                                class="flex items-center gap-2 border border-gray-300 hover:border-gray-400 text-gray-700 px-4 py-2 rounded-lg transition-colors duration-300 text-sm font-medium">
+                                <i class="bi bi-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <i class="bi bi-globe text-3xl text-secondary mr-3"></i>
+                            <h3 class="text-xl font-bold text-gray-900">Student Information Portal</h3>
+                        </div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Web-based student information system with course
+                            enrollment, grade tracking, and academic record management capabilities.</p>
+
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span
+                                class="px-3 py-1 bg-blue-100 text-primary text-sm rounded-full font-medium">HTML</span>
+                            <span class="px-3 py-1 bg-blue-100 text-primary text-sm rounded-full font-medium">CSS</span>
+                            <span
+                                class="px-3 py-1 bg-blue-100 text-primary text-sm rounded-full font-medium">JavaScript</span>
+                            <span
+                                class="px-3 py-1 bg-blue-100 text-primary text-sm rounded-full font-medium">MySQL</span>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <a href="#"
+                                class="flex items-center gap-2 bg-primary hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-300 text-sm font-medium">
+                                <i class="bi bi-box-arrow-up-right"></i>
+                                Live Demo
+                            </a>
+                            <a href="#"
+                                class="flex items-center gap-2 border border-gray-300 hover:border-gray-400 text-gray-700 px-4 py-2 rounded-lg transition-colors duration-300 text-sm font-medium">
+                                <i class="bi bi-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- All Projects -->
+            <div class="text-center mb-8">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">All Projects</h3>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-center mb-3">
+                        <i class="bi bi-cart text-3xl text-accent mr-3"></i>
+                        <h4 class="text-lg font-semibold text-gray-900">E-Commerce Dashboard</h4>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">Admin dashboard for e-commerce platforms with
+                        inventory management, sales analytics, and customer relationship features.</p>
+
+                    <div class="flex flex-wrap gap-1 mb-4">
+                        <span class="px-2 py-1 bg-blue-100 text-primary text-xs rounded font-medium">React</span>
+                        <span class="px-2 py-1 bg-blue-100 text-primary text-xs rounded font-medium">TypeScript</span>
+                        <span class="px-2 py-1 bg-blue-100 text-primary text-xs rounded font-medium">MongoDB</span>
+                        <span class="px-2 py-1 bg-gray-200 text-gray-600 text-xs rounded">+1</span>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <a href="#"
+                            class="flex items-center gap-1 text-primary hover:text-blue-700 text-sm font-medium">
+                            <i class="bi bi-box-arrow-up-right text-sm"></i>
+                            Demo
+                        </a>
+                        <a href="#"
+                            class="flex items-center gap-1 text-gray-600 hover:text-gray-700 text-sm font-medium">
+                            <i class="bi bi-github text-sm"></i>
+                            Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-center mb-3">
+                        <i class="bi bi-kanban text-3xl text-orange-600 mr-3"></i>
+                        <h4 class="text-lg font-semibold text-gray-900">Task Management App</h4>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">Collaborative task management application with
+                        real-time updates, project tracking, and team coordination features.</p>
+
+                    <div class="flex flex-wrap gap-1 mb-4">
+                        <span class="px-2 py-1 bg-blue-100 text-primary text-xs rounded font-medium">React</span>
+                        <span class="px-2 py-1 bg-blue-100 text-primary text-xs rounded font-medium">Firebase</span>
+                        <span class="px-2 py-1 bg-blue-100 text-primary text-xs rounded font-medium">Tailwind</span>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <a href="#"
+                            class="flex items-center gap-1 text-primary hover:text-blue-700 text-sm font-medium">
+                            <i class="bi bi-box-arrow-up-right text-sm"></i>
+                            Demo
+                        </a>
+                        <a href="#"
+                            class="flex items-center gap-1 text-gray-600 hover:text-gray-700 text-sm font-medium">
+                            <i class="bi bi-github text-sm"></i>
+                            Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300">
+                    <div class="flex items-center mb-3">
+                        <i class="bi bi-graph-up text-3xl text-green-600 mr-3"></i>
+                        <h4 class="text-lg font-semibold text-gray-900">Analytics Dashboard</h4>
+                    </div>
+                    <p class="text-gray-600 text-sm mb-4 leading-relaxed">Business intelligence dashboard with data
+                        visualization, reporting tools, and performance metrics tracking.</p>
+
+                    <div class="flex flex-wrap gap-1 mb-4">
+                        <span class="px-2 py-1 bg-blue-100 text-primary text-xs rounded font-medium">Vue.js</span>
+                        <span class="px-2 py-1 bg-blue-100 text-primary text-xs rounded font-medium">Chart.js</span>
+                        <span class="px-2 py-1 bg-blue-100 text-primary text-xs rounded font-medium">Node.js</span>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <a href="#"
+                            class="flex items-center gap-1 text-primary hover:text-blue-700 text-sm font-medium">
+                            <i class="bi bi-box-arrow-up-right text-sm"></i>
+                            Demo
+                        </a>
+                        <a href="#"
+                            class="flex items-center gap-1 text-gray-600 hover:text-gray-700 text-sm font-medium">
+                            <i class="bi bi-github text-sm"></i>
+                            Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    I'm always open to discussing new opportunities, projects, or just having
+                    a conversation about technology and innovation.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Form -->
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Send a Message</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                                <input type="text" id="name" name="name" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                                    placeholder="Your Name">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" name="email" required
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                                    placeholder="your.email@example.com">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                                placeholder="What's this about?">
+                        </div>
+
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea id="message" name="message" required rows="5"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors resize-none"
+                                placeholder="Your message here..."></textarea>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-primary hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 flex items-center justify-center gap-2">
+                            <i class="bi bi-send"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Let's Connect</h3>
+                        <p class="text-gray-600 leading-relaxed mb-8">
+                            I'm currently looking for new opportunities and exciting projects to work on.
+                            Whether you have a question about my work, want to collaborate, or just want to
+                            say hello, I'd love to hear from you!
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <a href="mailto:ishimwechtistianne4@gmail.com"
+                            class="flex items-center gap-4 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                            <i class="bi bi-envelope text-2xl text-primary"></i>
+                            <div>
+                                <div class="text-sm text-gray-500 font-medium">Email</div>
+                                <div class="text-gray-900 font-medium">ishimwechtistianne4@gmail.com</div>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/IshimweMahoroChristianne" target="_blank" rel="noopener noreferrer"
+                            class="flex items-center gap-4 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                            <i class="bi bi-github text-2xl text-primary"></i>
+                            <div>
+                                <div class="text-sm text-gray-500 font-medium">GitHub</div>
+                                <div class="text-gray-900 font-medium">IshimweMahoroChristianne</div>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/ishimwe-mahoro-christianne-a0a3b3316" target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center gap-4 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                            <i class="bi bi-linkedin text-2xl text-primary"></i>
+                            <div>
+                                <div class="text-sm text-gray-500 font-medium">LinkedIn</div>
+                                <div class="text-gray-900 font-medium">Ishimwe Mahoro Christianne</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">Quick Response</h4>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            I typically respond to messages within 24 hours. For urgent inquiries,
+                            feel free to reach out via email directly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- Brand Section -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-blue-400">Christianne</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        IT Student & Software Developer passionate about creating innovative
+                        solutions in Information Management Systems.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <div class="space-y-2">
+                        <a href="#home" class="block text-gray-400 hover:text-blue-400 transition-colors">Home</a>
+                        <a href="#about" class="block text-gray-400 hover:text-blue-400 transition-colors">About</a>
+                        <a href="#skills" class="block text-gray-400 hover:text-blue-400 transition-colors">Skills</a>
+                        <a href="#projects"
+                            class="block text-gray-400 hover:text-blue-400 transition-colors">Projects</a>
+                        <a href="#contact" class="block text-gray-400 hover:text-blue-400 transition-colors">Contact</a>
+                    </div>
+                </div>
+
+                <!-- Social Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Me</h4>
+                    <div class="flex gap-4">
+                        <a href="https://github.com/IshimweMahoroChristianne" target="_blank" rel="noopener noreferrer"
+                            class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <i class="bi bi-github text-2xl"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ishimwe-mahoro-christianne-a0a3b3316" target="_blank"
+                            rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <i class="bi bi-linkedin text-2xl"></i>
+                        </a>
+                        <a href="mailto:ishimwechtistianne4@gmail.com"
+                            class="text-gray-400 hover:text-blue-400 transition-colors">
+                            <i class="bi bi-envelope text-2xl"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 text-sm mt-4">
+                        ishimwechtistianne4@gmail.com
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                    © 2025 Ishimwe Mahoro Christianne. All rights reserved.
+                </p>
+                <p class="text-gray-400 text-sm flex items-center gap-1">
+                    Made By Ishimwe Mahoro Christianne
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
